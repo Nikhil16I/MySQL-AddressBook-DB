@@ -1,0 +1,85 @@
+UC-1->
+
+Commit-
+ 
+->Show DataBases;
+->Create Database Address_Book;
+->Show DataBases;
+->Use Address_Book;
+--------------------------------*******-----------------------------------------
+UC-2->
+
+Commit-
+
+->Create Table Address_book(FirstName varchar(20),LastName varchar(20),Address varchar(100),Sate varchar(20),City varchar(20),ZipCode int , PhoneNumber int , Email varchar(20));
+->Desc address_book;
+--------------------------------*******-----------------------------------------
+UC-3->
+
+Commit-
+
+->Insert into Address_book Values('Nikhil','I','Plot No. 111 Rahul Park','Maharashtra','Nagpur',444444,91234569,'Nikhil@gmail.com');
+->select * from Address_book;
+->Insert into Address_book Values('Adesh','Jain','Radhika Vihar','Maharashtra','Nagpur',444444,912348569,'Adesh@gmail.com');
+->Insert into Address_book Values('Sugat','D','Toshniwal Layout','Maharashtra','Nagpur',444444,9794569,'Sugat@gmail.com');
+->select * from Address_book;
+--------------------------------*******-----------------------------------------
+UC-4->
+
+Commit-
+
+->select * from Address_book;
+->Update Address_Book set State ='Karnataka' where FirstName ='Adesh';
+->select * from Address_book;
+--------------------------------*******-----------------------------------------
+UC-5->
+
+Commit-
+
+->select * from Address_book;
+-> Insert into Address_book Values('Rajat','Patel','CIDCO','Maharashtra','Aurangabad',444444,9794449,'Rajat@gmail.com');
+->select * from Address_book;
+->Delete From Address_book where FirstName = 'Sugat';
+->select * from Address_book;
+--------------------------------*******-----------------------------------------
+UC-6->
+
+Commit-
+
+->select * from Address_book;
+->select * from Address_book Where City ='Aurangabad' ;
+->select * from Address_book Where Sate ='Karnataka' ;
+--------------------------------*******-----------------------------------------
+UC-7->
+
+Commit-
+
+->select * from Address_book;
+->select Count(FirstName) From Address_Book where City= 'Aurangabad';
+->select Count(FirstName) From Address_Book where Sate= 'Karnataka';
+--------------------------------*******-----------------------------------------
+UC-8->
+
+Commit-
+
+->select * from Address_book;
+->select city,FirstName From Address_book Order By City Asc;
+--------------------------------*******-----------------------------------------
+UC-9->
+
+Commit-
+->Alter Table Address_Book Add Type Varchar(20);
+->select * from Address_book;
+->Update Address_book Set Type ='Family' where FirstName ='Nikhil';
+->Update Address_book Set Type ='Friends' where FirstName ='Adesh';
+->Update Address_book Set Type ='Profession' where FirstName ='Rajat';
+->select * from Address_book;
+--------------------------------*******-----------------------------------------
+UC-10->
+
+Commit-
+
+->select * from Address_book;
+->Select Count(FirstName) from Address_Book where Sate = 'Maharashtra';
+->select * from Address_book;
+->Select Count(FirstName) from Address_Book ;
